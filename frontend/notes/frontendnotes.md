@@ -71,3 +71,27 @@ hamara orign same nahi hai isliye probmle aa rha hai like port number ya kuch bh
 
 ### soloutuin is kki ham apne url ko whitelist kar de
 ### ip whitelist ya domain whitelist jisse hamara url sab ke liye accessiable hoga 
+
+---
+
+## for writng the proxy when we are areation the project with the vite bundler
+
+we have to in the vite config js file and use the server 
+
+## so proxy se kya hoga ki hamara jaha bhi url me api likha hoga woh toh api ka vlaue append hoga hi like hamra frontend me app.jsx me 
+``` jsx
+  useEffect(()=>{
+    // here we just have to do the axios se get request 
+    // axios.get('http://localhost:3000/jokes')
+    axios.get('/api/jokes')
+    .then((response) => {setJokes(response.data)})
+    .catch((err)=>{console.log(err);
+    })
+  },[])
+
+```
+
+yaha pe hamra api se pahle `(http://localhost:3000)` ye toh append hoga hi hamre api ke jagah pe per hamre server ko laagega ki hamra jo ye url hai woh origin kaha se hua hai woh hai hamare localhost 3000 se hi 
+// so hamare app chal kahi pe bhi rahi ho per hamre server ko lagega ki hama request same server se hi aa rhai hai 
+
+## so in the production we just change the api ka vlaue to the app ka domain url 
