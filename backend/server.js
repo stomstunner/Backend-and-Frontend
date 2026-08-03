@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 
 // now lets make a joke route where we have multiple jokes 
 
-app.get('/jokes', (req, res) => {
+app.get('/api/jokes', (req, res) => {
     const jokes = [
         {
             id:1,
