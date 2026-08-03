@@ -5,11 +5,20 @@ function App() {
   // now we just use the useeffect ki jaisse hi hamra page load ho hamra data aa jaye 
   useEffect(()=>{
     // here we just have to do the axios se get request 
-    axios.get('http://localhost:3000/jokes')
+    // axios.get('http://localhost:3000/jokes')
+    axios.get('/api/jokes')
     .then((response) => {setJokes(response.data)})
     .catch((err)=>{console.log(err);
     })
   },[])
+
+  // so here in the axios.get we do not write the link in one go we just write the pathname for the api and we make proxy for that kyuki hamre pass hamreha localhost me toh api nahi chalega na hamara apic jis bhi app ka domain me hoge like google.com woh uspe chelga so insted of the lind ke baad api.jokes we just write the /api/jokes
+
+  // and we make the proxy 
+
+  // if we maked the app with create react app then in the manisfaction fiel we jsut have to add the proxy and the localhost port name 
+  // "proxy" : "http://localhost:3000"
+  
 
   return (
     <>
