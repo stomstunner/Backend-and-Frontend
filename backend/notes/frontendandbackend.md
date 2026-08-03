@@ -91,3 +91,11 @@ PS C:\Users\ujjwal kumar\Desktop\Backend And Frontend> echo "# Backend-and-Front
 Initialized empty Git repository in C:/Users/ujjwal kumar/Desktop/Backend And Frontend/.git/
 
 ```
+
+----
+
+## hame hamesha apne data ka naam kuch like aissa rakhna chaiye jisme ham proxy laga sake like /api/jokes
+
+toh yaha pe ham api ke jagah pe apna url de denge base wla jisse ham CORS ka problem nhai aayega 
+
+## and hame woh api wla chiz hame axios .get me bhi use kar sakte hai like axios.get('/api/jokes')
