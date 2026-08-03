@@ -95,3 +95,4 @@ yaha pe hamra api se pahle `(http://localhost:3000)` ye toh append hoga hi hamre
 // so hamare app chal kahi pe bhi rahi ho per hamre server ko lagega ki hama request same server se hi aa rhai hai 
 
 ## so in the production we just change the api ka vlaue to the app ka domain url 
+
