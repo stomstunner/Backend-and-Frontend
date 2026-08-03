@@ -1,0 +1,27 @@
+{
+  "name": "backandfrontend",
+  "version": "1.0.0",
+  "description": "a demo project for learning the backend and frontend",
+  "keywords": [
+    "backend",
+    "frontend"
+  ],
+  "homepage": "https://github.com/stomstunner/Backend-and-Frontend#readme",
+  "bugs": {
+    "url": "https://github.com/stomstunner/Backend-and-Frontend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stomstunner/Backend-and-Frontend.git"
+  },
+  "license": "ISC",
+  "author": "ujjwal",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
