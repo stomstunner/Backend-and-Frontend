@@ -32,7 +32,8 @@ function App() {
         <div key={joke.id}>
           <h2>{joke.title}</h2>
           <h2>{joke.description}</h2>
-        </div>
+        </div> 
+        
       ))}
     </>
   );
